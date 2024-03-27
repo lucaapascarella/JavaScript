@@ -34,6 +34,7 @@ function calcolatrice() {
     // Mostra il risultato all'utente
     alert("Il risultato è: " + risultato);
 }
+
 // 2) Scrivere una funzione chiamata "inverti_cifre" che prende in input un numero intero e lo restituisce con le cifre invertite .
 
 function inverti_cifre(numero) 
@@ -46,4 +47,4 @@ function inverti_cifre(numero)
 
 // Chiamate di funzione
 calcolatrice();
-console.log(inverti_cifre(12345));
+console.log(inverti_cifre(56789));
