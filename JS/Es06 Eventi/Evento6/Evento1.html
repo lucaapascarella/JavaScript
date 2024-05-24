@@ -1,0 +1,36 @@
+<input type="password" id="password" oninput="checkPasswordStrength()">
+
+<script>
+function checkPasswordStrength() {
+  var password = document.getElementById("password").value;
+  var passwordStrength = 0;
+  // Esempio di requisiti di password: almeno 8 caratteri, una lettera maiuscola, una lettera minuscola e un numero.
+  if (password.length >= 8) {
+    passwordStrength++;
+  }
+  if (password.match(/[A-Z]/)) {
+    passwordStrength++;
+  }
+  if (password.match(/[a-z]/)) {
+    passwordStrength++;
+  }
+  if (password.match(/[0-9]/)) {
+    passwordStrength++;
+  }
+  var backgroundColor;
+  switch (passwordStrength) {
+    case 0:
+    case 1:
+      backgroundColor = "red";
+      break;
+    case 2:
+    case 3:
+      backgroundColor = "orange";
+      break;
+    case 4:
+      backgroundColor = "green";
+      break;
+  }
+  document.getElementById("password").style.backgroundColor = backgroundColor;
+}
+</script>

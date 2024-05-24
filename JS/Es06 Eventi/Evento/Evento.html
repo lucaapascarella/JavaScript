@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eventi</title>
+<style>
+.button {
+  background-color: rgb(255, 0, 221);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+.button2 {
+  background-color: rgb(17, 0, 255);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+</style>
+<script src="Evento.js" defer></script>
+</head>
+<body>
+
+<button id="pul" class="button">Pulsante</button><br><br>
+
+<input type="text" id="codice_fiscale">
+
+<input type="text" id="testo" placeholder="Testo"><br><br>
+
+<p id="testoDaNascondere">Testo da nascondere</p>
+<button id="pulsante">Nascondi Testo</button><br><br>
+
+<input type="text" id="password" placeholder="Password"><br><br>
+
+<input type="text" id="ripetiPassword" placeholder="Ripeti Password"><br><br>
+
+<button id="button">Conferma password</button><br><br>
+
+<!--
+function checkPasswordStrength() {
+  let password = document.getElementById("password").value;
+  let passwordStrength = 0;
+  // Esempio di requisiti di password: almeno 10 caratteri, una lettera maiuscola, una lettera minuscola e un numero.
+  if (password.length >= 10) {
+    passwordStrength++;
+  }
+  if (password.match(/[A-Z]/)) {
+    passwordStrength++;
+  }
+  if (password.match(/[a-z]/)) {
+    passwordStrength++;
+  }
+  if (password.match(/[0-9]/)) {
+    passwordStrength++;
+  }
+  let backgroundColor;
+  switch (passwordStrength) {
+    case 0:
+    case 1:
+      backgroundColor = "red";
+      break;
+    case 2:
+    case 3:
+      backgroundColor = "orange";
+      break;
+    case 4:
+      backgroundColor = "green";
+      break;
+  }
+  document.getElementById("password").style.backgroundColor = backgroundColor;
+}
+-->
+
+</body>
+</html>

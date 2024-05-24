@@ -1,0 +1,12 @@
+<input type="password" id="password">
+<input type="password" id="ripetipassword" onblur="checkPassword()">
+
+<script>
+function checkPassword() {
+  var password = document.getElementById("password").value;
+  var ripetiPassword = document.getElementById("ripetipassword").value;
+  if (password !== ripetiPassword) {
+    alert("Le password non corrispondono");
+  }
+}
+</script>
