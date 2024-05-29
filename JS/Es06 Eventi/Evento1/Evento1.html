@@ -1,26 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mouse Over Button</title>
-<style>
-.button {
-  background-color: blue;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
+<button id="myButton">Pulsante</button>
 
-.button:hover {
-  background-color: green;
-}
-</style>
-</head>
-<body>
+<script>
+// Otteniamo il riferimento al pulsante dal documento utilizzando l'ID
+const button = document.getElementById('myButton');
 
-<button class="button">Pulsante</button>
+// Aggiungiamo un gestore di eventi per l'evento 'mouseover' (passaggio del mouse sopra il pulsante)
+button.addEventListener('mouseover', function() {
+    // Quando il mouse è sopra il pulsante, cambiamo il colore di sfondo in blu e il colore del testo in bianco
+    button.style.backgroundColor = 'green';
+    button.style.color = 'white';
+});
 
-</body>
-</html>
+// Aggiungiamo un gestore di eventi per l'evento 'mouseout' (uscita del mouse dal pulsante)
+button.addEventListener('mouseout', function() {
+    // Quando il mouse esce dal pulsante, ripristiniamo il colore di sfondo e il colore del testo ai valori predefiniti
+    button.style.backgroundColor = '';
+    button.style.color = '';
+});
+//utilizzo eventi mouseover e mouseout
+</script>
